@@ -19,7 +19,7 @@ return string.charAt(0);
 };
 
 function firstCharacters (string, n) {
-return string.substring(0, 4);
+return string.slice(0, n);
 };
 
 module.exports = {
