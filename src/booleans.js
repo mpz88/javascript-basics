@@ -1,53 +1,63 @@
 function negate(a) {
-  // your code here
+  return !a;
 };
 
 function both(a, b) {
-  // your code here
+  return a&&b;
 };
 
 function either(a, b) {
-  // your code here
+  return a||b;
 };
 
 function none(a, b) {
-  // your code here
-};
+return a===b&& a===false;
+  };
+
 
 function one(a, b) {
-  // your code here
+if (a===true) {
+if (b===true) {
+  return false
+}else{return true}
+  } else if (b === true) {
+    return true;
+  }else {return false}
 };
 
 function truthiness(a) {
-  // your code here
+  return !!a;
 };
 
 function isEqual(a, b) {
-  // your code here
+  return a===b;
 };
 
 function isGreaterThan(a, b) {
-  // your code here
+  return a>b;
 };
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
+  return a<=b;
 };
 
 function isOdd(a) {
-  // your code here
+     return Math.abs(a % 2) == 1;
+
 };
 
 function isEven(a) {
-  // your code here
+   return a % 2 == 0;
 };
 
 function isSquare(a) {
-  // your code here
+  if (a === Math.pow(2)) {
+    return true;
+  }
 };
 
 function startsWith(char, string) {
-  // your code here
+  
 };
 
 function containsVowels(string) {
@@ -55,9 +65,12 @@ function containsVowels(string) {
 };
 
 function isLowerCase(string) {
-  // your code here
+ if (string.toLowerCase()===string) {
+  return true
+  } else {
+    return false;
+  }
 };
-
 module.exports = {
   negate,
   both,

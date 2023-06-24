@@ -1,5 +1,5 @@
 const getNthElement = (index, array) => {
-  // your code here
+  return array[index];
 };
 
 const arrayToCSVString = array => {
@@ -7,11 +7,11 @@ const arrayToCSVString = array => {
 };
 
 const csvStringToArray = string => {
-  // your code here
+    return string (acc + ',' + curr);
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  const count= array.push(element)
 };
 
 const addToArray2 = (element, array) => {
@@ -19,11 +19,11 @@ const addToArray2 = (element, array) => {
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index,1)
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+ return numbers.map((number)=>number.toString());
 };
 
 const uppercaseWordsInArray = strings => {
